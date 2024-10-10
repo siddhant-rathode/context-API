@@ -1,15 +1,10 @@
 import { useContext } from "react"
-import { DataContext } from "../App"
-import Navchild from "./Navchild"
+import { todocontext } from "../contexts/TodoContext"
 
 const Nav = () => {
-  // Step 3: Use Context Data...
-  const [data, setdata] = useContext(DataContext);
+  const data = useContext(todocontext);
   return (
-    <>
     <div>Nav: {data}</div>
-    <Navchild/>
-    </>
   )
 }
 
