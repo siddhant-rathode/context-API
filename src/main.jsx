@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import TodoContext from './contexts/TodoContext.jsx'
+import Wrapper from './utils/Wrapper.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <TodoContext>
+  <Wrapper>
     <App />
-  </TodoContext>,
+  </Wrapper>,
 )
